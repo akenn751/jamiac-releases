@@ -8,4 +8,4 @@ If Windows says "Windows protected your PC", click **More info**, then **Run any
 **Tried it?** Please tell me what you think: [5-10 minute feedback survey](https://forms.gle/QQ6Y2LQHRgaBLbNK6)  
 **Want updates?** [Get email updates about JAMiac](https://forms.gle/i3RiLMZ7eqgWYV1i7)
 
-Want to reach out? Have questions? Email [support@jamiac.com](mailto:support@jamiac.com)
+Want to reach out? Questions or problems? Email [support@jamiac.com](mailto:support@jamiac.com), or use the **Report a problem** button within the app.
