@@ -4,3 +4,6 @@
 
 Run the installer once. JAMiac updates itself from then on.
 If Windows says "Windows protected your PC", click **More info**, then **Run anyway**.
+
+**Tried it?** Please tell me what you think: [5-10 minute feedback survey](https://forms.gle/QQ6Y2LQHRgaBLbNK6)  
+**Want updates?** [Get email updates about JAMiac](https://forms.gle/i3RiLMZ7eqgWYV1i7)
