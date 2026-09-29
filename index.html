@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JAMiac: jam without a drummer</title>
+<meta name="description" content="JAMiac listens to you play, locks onto your riff, and plays real drums along with you. Free beta for Windows.">
+<meta property="og:title" content="JAMiac: jam without a drummer">
+<meta property="og:description" content="Play a riff. JAMiac listens, locks on, and drums along with you. Free beta for Windows.">
+<meta property="og:image" content="https://jamiac.com/jamiac.png">
+<meta property="og:url" content="https://jamiac.com/">
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+  :root {
+    --page: #151a20;
+    --card: #1e242c;
+    --line: #2b333e;
+    --text: #e9eef4;
+    --muted: #8b9bb0;
+    --teal: #37cdc4;
+    --teal-dark: #1f8c86;
+    --orange: #e0913a;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--page);
+    color: var(--text);
+    font: 17px/1.6 "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  a { color: var(--teal); }
+  a:hover { color: #6fe0d9; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* hero */
+  header.wrap { padding: 64px 20px 40px; text-align: center; }
+  .logo { width: 112px; height: 112px; display: block; margin: 0 auto 20px; }
+  h1 { font-size: 48px; line-height: 1.1; margin: 0 0 8px; letter-spacing: -0.5px; }
+  .tag { font-size: 22px; color: var(--muted); margin: 0 0 28px; }
+  .pitch { max-width: 600px; margin: 0 auto 32px; font-size: 19px; }
+  .btn {
+    display: inline-block; background: var(--teal); color: #0d1216;
+    font-weight: 700; font-size: 19px; text-decoration: none;
+    padding: 16px 32px; border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(55, 205, 196, 0.25);
+  }
+  .btn:hover { background: #4fe0d7; color: #0d1216; }
+  .under-btn { color: var(--muted); font-size: 14px; margin-top: 12px; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 600; letter-spacing: 0.5px;
+    color: var(--orange); border: 1px solid var(--orange); border-radius: 999px;
+    padding: 2px 10px; margin-bottom: 18px; text-transform: uppercase;
+  }
+
+  section { padding: 28px 0; }
+  h2 { font-size: 26px; margin: 0 0 18px; }
+
+  /* features */
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 20px;
+  }
+  .card h3 { margin: 0 0 6px; font-size: 18px; color: var(--teal); }
+  .card p { margin: 0; color: var(--text); font-size: 16px; }
+
+  /* steps */
+  ol.steps { list-style: none; padding: 0; margin: 0; counter-reset: s; }
+  ol.steps li {
+    counter-increment: s; position: relative;
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 18px 20px 18px 68px; margin-bottom: 12px;
+  }
+  ol.steps li::before {
+    content: counter(s); position: absolute; left: 20px; top: 18px;
+    width: 32px; height: 32px; border-radius: 50%;
+    background: var(--orange); color: #1a1208; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
+  ol.steps b { display: block; margin-bottom: 2px; }
+  ol.steps span { color: var(--muted); font-size: 16px; }
+
+  .needs { color: var(--muted); font-size: 16px; }
+  .needs b { color: var(--text); }
+
+  /* feedback */
+  .links { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .links a.card { text-decoration: none; display: block; }
+  .links a.card:hover { border-color: var(--teal); }
+  .links a.card p { color: var(--muted); }
+
+  footer.wrap {
+    border-top: 1px solid var(--line); margin-top: 32px;
+    padding: 24px 20px 48px; color: var(--muted); font-size: 14px; text-align: center;
+  }
+
+  @media (max-width: 720px) {
+    header.wrap { padding: 44px 20px 28px; }
+    h1 { font-size: 38px; }
+    .tag { font-size: 19px; }
+    .grid, .links { grid-template-columns: 1fr; }
+    .btn { display: block; }
+  }
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <img class="logo" src="jamiac.png" alt="JAMiac drum icon" width="112" height="112">
+  <div class="badge">Free beta</div>
+  <h1>JAMiac</h1>
+  <p class="tag">jam without a drummer</p>
+  <p class="pitch">Play a riff on your guitar. JAMiac listens, locks onto your phrase, and plays
+    real drums along with you. Change riffs whenever you like, and it follows.</p>
+  <a class="btn" href="https://github.com/akenn751/jamiac-releases/releases/latest/download/JAMiac-beta-Setup.exe">Download for Windows</a>
+  <div class="under-btn">Windows 10 or 11 · free during the beta · updates itself</div>
+</header>
+
+<main class="wrap">
+
+  <section>
+    <h2>What it does</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Listens to you</h3>
+        <p>Plug in and play. JAMiac works out your riff and where each phrase starts, then drops in on the downbeat.</p>
+      </div>
+      <div class="card">
+        <h3>Real grooves</h3>
+        <p>Drum parts come from thousands of bars of real human drumming, matched to what you're playing.</p>
+      </div>
+      <div class="card">
+        <h3>Record your jam</h3>
+        <p>Capture the whole session, guitar and drums in sync, to listen back or share.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Getting started</h2>
+    <ol class="steps">
+      <li><b>Download and run the installer.</b>
+        <span>If your browser blocks the download, open your downloads (Ctrl+J) and choose <i>Keep</i>.
+          JAMiac is new and not yet signed with a paid certificate.</span></li>
+      <li><b>Click through the one-time Windows warning.</b>
+        <span>If Windows says “Windows protected your PC”, click <i>More info</i>, then <i>Run anyway</i>. You only do this once.</span></li>
+      <li><b>Follow the setup guide.</b>
+        <span>It opens with JAMiac and takes a minute: pick your input and speakers, and calibrate recording sync. That calibration is what lets JAMiac lock on tight.</span></li>
+      <li><b>Hit Free jam and play.</b>
+        <span>From then on JAMiac keeps itself up to date. When a new version is ready you'll see it at the top of the window.</span></li>
+    </ol>
+    <p class="needs"><b>You'll need:</b> a Windows PC, your instrument, and headphones or speakers.
+      An audio interface gives the best results; a microphone works too.</p>
+  </section>
+
+  <section>
+    <h2>Help shape it</h2>
+    <div class="links">
+      <a class="card" href="https://forms.gle/QQ6Y2LQHRgaBLbNK6">
+        <h3>Give feedback</h3>
+        <p>A 5–10 minute survey after you've played with it. It really helps.</p>
+      </a>
+      <a class="card" href="https://forms.gle/i3RiLMZ7eqgWYV1i7">
+        <h3>Get updates</h3>
+        <p>Hear when JAMiac improves. No spam.</p>
+      </a>
+      <a class="card" href="mailto:support@jamiac.com">
+        <h3>Get help</h3>
+        <p>support@jamiac.com, or use <i>Report a problem</i> in the app.</p>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  © 2026 JAMiac · <a href="mailto:support@jamiac.com">support@jamiac.com</a>
+</footer>
+
+</body>
+</html>
