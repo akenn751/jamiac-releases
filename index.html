@@ -58,6 +58,16 @@
     margin: 40px auto 0; border-radius: 14px; border: 1px solid var(--line);
     box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
   }
+  /* demos */
+  .demo { margin: 0 0 28px; }
+  .demo video {
+    display: block; width: 100%; height: auto; aspect-ratio: 16 / 9;
+    background: #000; border-radius: 14px; border: 1px solid var(--line);
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+  }
+  .demo h3 { margin: 14px 0 2px; font-size: 18px; color: var(--teal); }
+  .demo p { margin: 0; color: var(--muted); font-size: 16px; }
+
   section { padding: 28px 0; }
   h2 { font-size: 26px; margin: 0 0 18px; }
 
@@ -125,6 +135,26 @@
 </header>
 
 <main class="wrap">
+
+  <section id="demos">
+    <h2>See it in action</h2>
+    <div class="demo">
+      <video controls preload="none" playsinline poster="jamiac-demo-1-poster.jpg">
+        <source src="jamiac-demo-1.mp4" type="video/mp4">
+        Your browser can't play this video. <a href="jamiac-demo-1.mp4">Download it instead.</a>
+      </video>
+      <h3>Three riffs, one take</h3>
+      <p>Free jam with middle-of-the-road settings. JAMiac locks onto each riff and follows every change.</p>
+    </div>
+    <div class="demo">
+      <video controls preload="none" playsinline poster="jamiac-demo-2-poster.jpg">
+        <source src="jamiac-demo-2.mp4" type="video/mp4">
+        Your browser can't play this video. <a href="jamiac-demo-2.mp4">Download it instead.</a>
+      </video>
+      <h3>Same riff, different drummer</h3>
+      <p>One riff the whole way through while the live controls change. Hear what Pulse, Ornamentation and Backbone do.</p>
+    </div>
+  </section>
 
   <section>
     <h2>What it does</h2>
