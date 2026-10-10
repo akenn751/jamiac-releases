@@ -47,6 +47,10 @@
   }
   .btn:hover { background: #4fe0d7; color: #0d1216; }
   .under-btn { color: var(--muted); font-size: 14px; margin-top: 12px; }
+  .btn-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+  .btn-alt { background: transparent; color: var(--teal); border: 2px solid var(--teal);
+             box-shadow: none; padding: 14px 30px; }
+  .btn-alt:hover { background: rgba(55, 205, 196, 0.12); color: var(--teal); }
   .badge {
     display: inline-block; font-size: 13px; font-weight: 600; letter-spacing: 0.5px;
     color: var(--orange); border: 1px solid var(--orange); border-radius: 999px;
@@ -124,8 +128,12 @@
   <p class="tag">jam without a drummer</p>
   <p class="pitch">Play a riff on your guitar. JAMiac listens, locks onto your phrase, and plays
     real drums along with you. Change riffs whenever you like, and it follows.</p>
-  <a class="btn" href="https://github.com/akenn751/jamiac-releases/releases/latest/download/JAMiac-beta-Setup.exe">Download for Windows</a>
-  <div class="under-btn">Windows 10 or 11 · free during the beta · updates itself</div>
+  <div class="btn-row">
+    <a class="btn" href="https://github.com/akenn751/jamiac-releases/releases/latest/download/JAMiac-beta-Setup.exe">Download for Windows</a>
+    <a class="btn btn-alt" href="https://docs.google.com/forms/d/e/1FAIpQLScaYDJU1qoXfj6hIWsdsIcNYuamy3xWSM6eLvkO3MXBE6W40g/viewform" target="_blank" rel="noopener">Mac version</a>
+  </div>
+  <div class="under-btn">Windows 10 or 11 · free during the beta · updates itself<br>
+    Mac version in progress: get notified when it's ready</div>
 </header>
 
 <main class="wrap">
